@@ -138,32 +138,153 @@
                                     <form class="main-search" role="form" method="post" action="?">
                                         <header class="clearfix">
                                             <h3 class="pull-left">Search</h3>
-                                            <a href="#advanced-search" class="show-more pull-right" data-toggle="collapse" aria-expanded="false" aria-controls="advanced-search">Advanced Search</a>
+                                            <a href="#advanced-search" class="show-more pull-right" data-toggle="collapse" aria-expanded="false" aria-controls="advanced-search">
+                                                 Search Through Filters</a>
                                         </header>
                                         <div class="advanced-search collapse" id="advanced-search">
-                                            <h4>Features</h4>
-                                            <ul class="list-unstyled checkboxes">
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="1">Free Parking</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="2">Cards Accepted</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="3">Wi-Fi</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="4">Air Condition</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="5">Reservations</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="6">Team-buildings</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="7">Places to seat</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="8">Winery</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="9">Draft Beer</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="10">LCD</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="11">Saloon</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="12">Free Access</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="13">Terrace</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="14">Minigolf</label></div></li>
-                                                <li><div class="checkbox"><label><input type="checkbox" name="features[]" value="15">Night Bar</label></div></li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6">
+                        <!--Job Title Start-->
+                                            <div class="col-md-4 col-sm-4">
                                                 <div class="form-group">
-                                                    <label for="type">Property Type</label>
+                                                    <label for="type">Job Title</label>
+                                                    <select name="type" multiple title="All" data-live-search="true" id="type">
+                                                        <option value="1">Managerial</option>
+                                                        <option value="2">Assistant</option>
+                                                        <!--sub categories
+                                                        <option value="2" class="sub-category">Apparel</option>
+                                                        <option value="3" class="sub-category">Computers</option>
+                                                        <option value="4" class="sub-category">Nature</option>
+                                                        <option value="3">Software Engineer</option>
+                                                        <option value="4">Human resource supervisor</option>
+                                                        <!--sub categories
+                                                        <option value="7" class="sub-category">Bars</option>
+                                                        <option value="8" class="sub-category">Vegetarian</option>
+                                                        <option value="9" class="sub-category">Steak & Grill</option>
+                                                        <option value="5">Chemical Engineer</option>
+                                                        <!--sub categories
+                                                        <option value="11" class="sub-category">Cycling</option>
+                                                        <option value="12" class="sub-category">Water Sports</option>
+                                                        <option value="13" class="sub-category">Winter Sports</option>
+                                                        <option value="6">Electrical Engineer</option>
+                                                        <option value="7">Mechanical Engineer</option>
+                                                        <option value="8">Automotive Engineer</option>
+                                                        <option value="9">Surgeon</option>
+                                                        <option value="10">Doctor</option>
+-->
+                                                    </select>
+                                                </div>
+                                                <!-- /.form-group -->
+                                            </div>
+                        <!--Job Title End-->
+                                            <!--/.col-md-6-->
+                        <!--City Start-->                 
+                                            <div class="col-md-4 col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="type">City</label>
+                                                    <select name="type" multiple title="All" data-live-search="true" id="type">
+                                                        <option value="1">Lahore</option>
+                                                        <option value="2">Islamabad</option>
+                                                        <!--sub categories
+                                                        <option value="2" class="sub-category">Apparel</option>
+                                                        <option value="3" class="sub-category">Computers</option>
+                                                        <option value="4" class="sub-category">Nature</option>
+                                                        <option value="3">Karachi</option>
+                                                        <option value="4">Peshawar</option>
+                                                        <!--sub categories
+                                                        <option value="7" class="sub-category">Bars</option>
+                                                        <option value="8" class="sub-category">Vegetarian</option>
+                                                        <option value="9" class="sub-category">Steak & Grill</option>
+                                                        <option value="5">Multan</option>
+                                                        <!--sub categories
+                                                        <option value="11" class="sub-category">Cycling</option>
+                                                        <option value="12" class="sub-category">Water Sports</option>
+                                                        <option value="13" class="sub-category">Winter Sports</option>
+                                                        <option value="6">Sargodha</option>
+                                                        <option value="7">DG Khan</option>
+                                                        <option value="8">Hyderabad</option>
+                                                        <option value="9">Gawadar</option>
+                                                        <option value="10">Quetta</option>
+                                                     -->
+   
+                                                    </select>
+                                                </div>
+                                                <!-- /.form-group -->
+                                            </div>
+                            <!--City End-->
+                                            <!--/.col-md-3-->
+                            <!--Experience Start-->                
+                                            <div class="col-md-4 col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="type">Experience</label>
+                                                    <select name="type" multiple title="All" data-live-search="true" id="type">
+                                                        <option value="1">None</option>
+                                                        <option value="2">1 - 2 yr</option>
+                                                        <!--sub categories
+                                                        <option value="2" class="sub-category">Apparel</option>
+                                                        <option value="3" class="sub-category">Computers</option>
+                                                        <option value="4" class="sub-category">Nature</option>
+                                                        -->
+                                                        <option value="3">2 - 4 yr</option>
+                                                        <option value="4">4 - 6 yr</option>
+                                                        <!--sub categories
+                                                        <option value="7" class="sub-category">Bars</option>
+                                                        <option value="8" class="sub-category">Vegetarian</option>
+                                                        <option value="9" class="sub-category">Steak & Grill</option>
+                                                        <option value="5">6 - 8 yr</option>
+                                                        <!--sub categories
+                                                        <option value="11" class="sub-category">Cycling</option>
+                                                        <option value="12" class="sub-category">Water Sports</option>
+                                                        <option value="13" class="sub-category">Winter Sports</option>
+                                                        <option value="6">8 - 10 yr</option>
+                                                        <option value="7">10 - 12 yr</option>
+                                                        <option value="8">12 - 14 yr</option>
+                                                        <option value="9">14+</option>
+                                                        -->
+                                                    </select>
+                                                </div>
+                                                <!-- /.form-group -->
+                                            </div>
+                            <!--Experience End-->
+
+                            <!--Skills Start-->
+                                            <div class="col-md-4 col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="type">Skills</label>
+                                                    <select name="type" multiple title="All" data-live-search="true" id="type">
+                                                        <option value="1">A</option>
+                                                        <option value="2">B</option>
+                                                        <!--sub categories
+                                                        <option value="2" class="sub-category">Apparel</option>
+                                                        <option value="3" class="sub-category">Computers</option>
+                                                        <option value="4" class="sub-category">Nature</option>
+                                                        -->
+                                                        <option value="3">C</option>
+                                                        <option value="4">D</option>
+                                                        <!--sub categories
+                                                        <option value="7" class="sub-category">Bars</option>
+                                                        <option value="8" class="sub-category">Vegetarian</option>
+                                                        <option value="9" class="sub-category">Steak & Grill</option>
+                                                        <option value="5">E</option>
+                                                        <!--sub categories
+                                                        <option value="11" class="sub-category">Cycling</option>
+                                                        <option value="12" class="sub-category">Water Sports</option>
+                                                        <option value="13" class="sub-category">Winter Sports</option>
+                                                        <option value="6">F</option>
+                                                        <option value="7">G</option>
+                                                        <option value="8">H</option>
+                                                        <option value="9">I</option>
+                                                        <option value="10">J</option>
+                                                     -->
+   
+                                                    </select>
+                                                </div>
+                                                <!-- /.form-group -->
+                                            </div>
+                            <!--Skills End-->
+                                            <!--/.col-md-3-->
+                            <!--Category Start-->              
+                                            <div class="col-md-4 col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="type">Category</label>
                                                     <select name="type" multiple title="All" data-live-search="true" id="type">
                                                         <option value="1">Stores</option>
                                                         <option value="2" class="sub-category">Apparel</option>
@@ -183,43 +304,47 @@
                                                 <!-- /.form-group -->
                                             </div>
                                             <!--/.col-md-6-->
-                                            <div class="col-md-6 col-sm-6">
+                                            <div class="col-md-4 col-sm-4">
                                                 <div class="form-group">
-                                                    <label for="bedrooms">Bedrooms</label>
-                                                    <div class="input-group counter">
-                                                        <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
-                                                        </span>
-                                                        <input type="text" class="form-control" id="bedrooms" name="bedrooms" placeholder="Any">
-                                                        <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
-                                                        </span>
-                                                    </div><!-- /input-group -->
+                                                    <label for="type">Company</label>
+                                                    <select name="type" multiple title="All" data-live-search="true" id="type">
+                                                        <option value="1">Nestle</option>
+                                                        <option value="2">Pearcl Continental</option>
+                                                        <!--sub categories
+                                                        <option value="2" class="sub-category">Apparel</option>
+                                                        <option value="3" class="sub-category">Computers</option>
+                                                        <option value="4" class="sub-category">Nature</option>
+                                                        -->
+                                                        <option value="3">AutoSoft</option>
+                                                        <option value="4">Nishat</option>
+                                                        <!--sub categories
+                                                        <option value="7" class="sub-category">Bars</option>
+                                                        <option value="8" class="sub-category">Vegetarian</option>
+                                                        <option value="9" class="sub-category">Steak & Grill</option>
+                                                        <option value="5">USAID</option>
+                                                        <!--sub categories
+                                                        <option value="11" class="sub-category">Cycling</option>
+                                                        <option value="12" class="sub-category">Water Sports</option>
+                                                        <option value="13" class="sub-category">Winter Sports</option>
+                                                        <option value="6">Stoneage</option>
+                                                        <option value="7">Nishat Group</option>
+                                                        <option value="8">Marriot</option>
+                                                        <option value="9">Pearl Continental</option>
+                                                        <option value="10">Netsol</option>
+-->
+                                                    </select>
                                                 </div>
                                                 <!-- /.form-group -->
                                             </div>
+                                            
+                                        </div>
+                                        <div class="row">
                                             <!--/.col-md-3-->
-                                            <div class="col-md-6 col-sm-6">
+                                            <div class="col-md-12 col-sm-12">
                                                 <div class="form-group">
-                                                    <label for="bathrooms">Bathrooms</label>
-                                                    <div class="input-group counter">
-                                                        <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
-                                                        </span>
-                                                        <input type="text" class="form-control" id="bathrooms" name="bathrooms" placeholder="Any">
-                                                        <span class="input-group-btn">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
-                                                        </span>
-                                                    </div><!-- /input-group -->
-                                                </div>
-                                                <!-- /.form-group -->
-                                            </div>
-                                            <!--/.col-md-3-->
-                                            <div class="col-md-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="location">Location</label>
+                                                    <label for="location"></label>
                                                     <div class="input-group location">
-                                                        <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                                                        <input type="text" class="form-control" id="location" placeholder="Search Here">
                                                         <span class="input-group-addon"><i class="fa fa-map-marker geolocation" data-toggle="tooltip" data-placement="bottom" title="Find my position"></i></span>
                                                     </div>
                                                 </div>
@@ -260,9 +385,22 @@
                                                 </div>
                                             </div>
                                             <div class="item-specific">
-                                                <span title="Bedrooms"><img src="assets/img/bedrooms.png" alt="">2</span>
-                                                <span title="Bathrooms"><img src="assets/img/bathrooms.png" alt="">2</span>
-                                                <span title="Area"><img src="assets/img/area.png" alt="">240m<sup>2</sup></span>
+                                                <span title="Bedrooms">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+<!--                                                    <img src="assets/img/bedrooms.png" alt="">2
+             -->                               </span>
+                                                <span title="Bathrooms">
+                                                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <!--    
+                                                    <img src="assets/img/bathrooms.png" alt="">2
+                                                   --> 
+                                                </span>
+                                                <span title="Area">
+                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                    <!--
+                                                        <img src="assets/img/area.png" alt="">240m<sup>2</sup>
+                                                        -->
+                                                </span>
                                                 <span title="Garages"><img src="assets/img/garages.png" alt="">1</span>
                                             </div>
                                             <div class="icon">
@@ -276,7 +414,10 @@
                                         <figure>63 Birch Street</figure>
                                         <div class="info">
                                             <div class="type">
+                                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                                <!--
                                                 <i><img src="assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
+                                                -->
                                                 <span>Job</span>
                                             </div>
                                             <div class="rating" data-rating="4"></div>
@@ -299,6 +440,10 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="icon">
+                                                <i class="fa fa-thumbs-up"></i>
+                                            </div>
+                                            
                                             <img src="assets/img/tour.jpg" alt="">
                                         </a>
                                     </div>
@@ -307,7 +452,10 @@
                                         <figure>63 Birch Street</figure>
                                         <div class="info">
                                             <div class="type">
+                                                <i class="fa fa-plane" aria-hidden="true"></i>
+                                                <!--
                                                 <i><img src="assets/icons/restaurants-bars/restaurants/cafetaria.png" alt=""></i>
+                                                -->
                                                 <span>Tours</span>
                                             </div>
                                             <div class="rating" data-rating="4"></div>
@@ -333,6 +481,10 @@
                                             <div class="item-specific">
                                                 <span>Daily menu from: $6</span>
                                             </div>
+                                            <div class="icon">
+                                                <i class="fa fa-thumbs-up"></i>
+                                            </div>
+                                            
                                             <img src="assets/img/event.jpg" alt="">
                                         </a>
                                     </div>
@@ -341,8 +493,11 @@
                                         <figure>4662 Bruce Street</figure>
                                         <div class="info">
                                             <div class="type">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <!--
                                                 <i><img src="assets/icons/restaurants-bars/restaurants/japanese-food.png" alt=""></i>
-                                                <span>Sushi</span>
+                                                -->
+                                                <span>Events</span>
                                             </div>
                                             <div class="rating" data-rating="3"></div>
                                         </div>
@@ -367,6 +522,10 @@
                                             <div class="item-specific">
                                                 <span>Daily menu from: $6</span>
                                             </div>
+                                            <div class="icon">
+                                                <i class="fa fa-thumbs-up"></i>
+                                            </div>
+                                            
                                             <img src="assets/img/course.jpg" alt="">
                                         </a>
                                     </div>
@@ -375,8 +534,11 @@
                                         <figure>357 Trainer Avenue</figure>
                                         <div class="info">
                                             <div class="type">
+                                                <i class="fa fa-book" aria-hidden="true"></i>
+                                                <!--
                                                 <i><img src="assets/icons/restaurants-bars/restaurants/fishchips.png" alt=""></i>
-                                                <span>Sushi Bar</span>
+                                                -->
+                                                <span>Courses</span>
                                             </div>
                                             <div class="rating" data-rating="3"></div>
                                         </div>
@@ -418,7 +580,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/img/items/restaurant/8.jpg" alt="">
+                                        <img src="assets/img/slider2.jpg" alt="">
                                     </div>
                                     <div class="wrapper">
                                         <a href="item-detail.html"><h3>Magma Bar and Grill</h3></a>
@@ -523,11 +685,28 @@
                                                         </div>
                                                     </div>
                                                     <div class="item-specific">
-                                                        <span title="Bedrooms"><img src="assets/img/bedrooms.png" alt="">2</span>
+                                                        <span title="Bedrooms">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+<!--                                                    <img src="assets/img/bedrooms.png" alt="">2
+             -->                               </span>
+                                                <span title="Bathrooms">
+                                                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <!--    
+                                                    <img src="assets/img/bathrooms.png" alt="">2
+                                                   --> 
+                                                </span>
+                                                <span title="Area">
+                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                    <!--
+                                                        <img src="assets/img/area.png" alt="">240m<sup>2</sup>
+                                                        -->
+                                                </span>
+<!--
+                                                            <span title="Bedrooms"><img src="assets/img/bedrooms.png" alt="">2</span>
                                                         <span title="Bathrooms"><img src="assets/img/bathrooms.png" alt="">2</span>
                                                         <span title="Area"><img src="assets/img/area.png" alt="">240m<sup>2</sup></span>
                                                         <span title="Garages"><img src="assets/img/garages.png" alt="">1</span>
-                                                    </div>
+    -->                                                </div>
                                                     <div class="icon">
                                                         <i class="fa fa-thumbs-up"></i>
                                                     </div>
@@ -633,10 +812,22 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-specific">
-                                                    <span title="Bedrooms"><img src="assets/img/bedrooms.png" alt="">2</span>
-                                                    <span title="Bathrooms"><img src="assets/img/bathrooms.png" alt="">2</span>
-                                                    <span title="Area"><img src="assets/img/area.png" alt="">240m<sup>2</sup></span>
-                                                    <span title="Garages"><img src="assets/img/garages.png" alt="">1</span>
+                                                    <span title="Bedrooms">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+<!--                                                    <img src="assets/img/bedrooms.png" alt="">2
+             -->                               </span>
+                                                <span title="Bathrooms">
+                                                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <!--    
+                                                    <img src="assets/img/bathrooms.png" alt="">2
+                                                   --> 
+                                                </span>
+                                                <span title="Area">
+                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                    <!--
+                                                        <img src="assets/img/area.png" alt="">240m<sup>2</sup>
+                                                        -->
+                                                </span>
                                                 </div>
                                                 <div class="icon">
                                                     <i class="fa fa-thumbs-up"></i>
@@ -1069,7 +1260,7 @@
                 <!--/.footer-top-->
                 <div class="footer-bottom">
                     <div class="container">
-                        <span class="left">(C) ThemeStarz, All rights reserved</span>
+                        <span class="left">2017 (C) WORKFELLOW, All rights reserved</span>
                             <span class="right">
                                 <a href="#page-top" class="to-top roll"><i class="fa fa-angle-up"></i></a>
                             </span>
