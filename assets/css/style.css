@@ -5048,8 +5048,9 @@ form.main-search {
   width: 100%;
 }
 form.main-search button {
+  padding: 15px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; 
 }
 form.main-search .form-group {
   display: inline-block;
@@ -5059,6 +5060,7 @@ form.main-search .form-group {
 }
 form.main-search input[type="text"], form.main-search input[type="date"], form.main-search input[type="email"], form.main-search input[type="search"], form.main-search input[type="password"], form.main-search input[type="number"], form.main-search input[type="tel"], form.main-search textarea.form-control, form.main-search .selectpicker {
   background-color: #fff;
+  padding: 15px;
 }
 form.background-color-grey-light {
   padding: 20px;
