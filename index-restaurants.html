@@ -72,39 +72,20 @@
                 <section class="hero-image search-filter-middle height-500">
                     <div class="inner">
                         <div class="container">
-                            <h1>Find Place For Fun and Eat</h1>
                             <div class="search-bar horizontal">
                                 <form class="main-search border-less-inputs background-dark narrow" role="form" method="post" action="?">
                                     <div class="input-row">
                                         <div class="form-group">
-                                            <label for="keyword">Keyword</label>
-                                            <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                                            <label for="keyword"></label>
+                                            <input type="text" class="form-control" id="keyword" placeholder="Search Here" style="font-size:22px;">                                       
                                         </div>
-                                        <!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label for="model">Search Category</label>
-                                            <select name="model" id="model" multiple title="Any" data-live-search="true">
-                                                <option value="1">Jobs</option>
-                                                <option value="2">Events</option>
-                                                <option value="3">Tours</option>
-                                                <option value="4">Courses</option>
-                                            </select>
-                                        </div>
-                                        <!-- /.form-group -->
-
-<!--                                        <div class="form-group">
-                                            <label for="location">Location</label>
-                                            <div class="input-group location">
-                                                <input type="text" class="form-control" id="location" placeholder="Enter Location">
-                                            </div>
-                                        </div>
- -->                                       <!-- /.form-group -->
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                                         </div>
                                         <!-- /.form-group -->
                                     </div>
                                 </form>
+
                                 <!-- /.main-search -->
                             </div>
                             <!-- /.search-bar -->
@@ -115,61 +96,6 @@
                     </div>
                 </section>
                 <!--end Hero Image-->
-
-                <!--Why Us-->
-                <section id="why-us" class="block">
-                    <div class="container">
-                        <header><h2>Why Us?</h2></header>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="feature-box">
-                                    <i class="fa fa-thumbs-up"></i>
-                                    <div class="description">
-                                        <h3>Lorem ipsum dolor </h3>
-                                        <p>
-                                            Praesent tempor a erat in iaculis. Phasellus vitae libero libero. Vestibulum ante
-                                            ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--/.feature-box-->
-                            </div>
-                            <!--/.col-md-4-->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="feature-box">
-                                    <i class="fa fa-folder"></i>
-                                    <div class="description">
-                                        <h3>Etiam vehicula felis a ipsum</h3>
-                                        <p>
-                                            Pellentesque nisl quam, aliquet sed velit eu, varius condimentum nunc.
-                                            Nunc vulputate turpis ut erat egestas, vitae rutrum sapien varius.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--/.feature-box-->
-                            </div>
-                            <!--/.col-md-4-->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="feature-box">
-                                    <i class="fa fa-money"></i>
-                                    <div class="description">
-                                        <h3>Donec dolor justo, volutpat </h3>
-                                        <p>
-                                            Maecenas quis ipsum lectus. Fusce molestie, metus ut consequat pulvinar,
-                                            ipsum quam condimentum leo, sit amet auctor lacus nulla at felis.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--/.feature-box-->
-                            </div>
-                            <!--/.col-md-4-->
-                        </div>
-                    </div>
-                </section>
-                <!--end Why Us-->
-
-                <hr>  
-
 
                 <!--Listing-->
                 <section id="listing" class="block">
@@ -262,27 +188,12 @@
                             </div>
                        </div>
                         <!--/.row-->
+<!--
+                                <hr>-->
                     </div>
                     <!--/.block-->
                 </section>
                 <!--end Listing-->
-
-<!--                <hr>
-<-->        <section id="subscribe" class="block">
-                    <div class="container">
-                        <header><h2>Subscribe</h2></header>
-                        <form class="subscribe form-inline border-less-inputs" action="?" method="post" role="form">
-                            <div class="input-group">
-                                <input type="email" class="form-control" id="subscribe_email" placeholder="Enter your email and get the newest updates">
-                                <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-default btn-large">Subscribe<i class="fa fa-angle-right"></i></button>
-                                </span>
-                            </div>
-                        </form>
-                        <!--/.subscribe-->
-                    </div>
-                    <!--/.container-->
-                </section>
                 
             </div>
             <!-- end Page Content-->
@@ -295,10 +206,24 @@
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">
-        <!--****0
+                                <section id="subscribe" class="block" style="background-color:#e8e8e4">
+                                    <div class="container">
+                                        <header><h2>Subscribe</h2></header>
+                                        <form class="subscribe form-inline border-less-inputs" action="?" method="post" role="form">
+                                            <div class="input-group">
+                                                <input type="email" class="form-control" id="subscribe_email" placeholder="Enter your email and get the newest updates">
+                                                <span class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default btn-large">Subscribe<i class="fa fa-angle-right"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                        <!--/.subscribe-->
+                                    </div>
+                                    <!--/.container-->
+                                </section>
+
                             <div class="col-md-4 col-sm-4">
                                 <!--New Items-->
-        <!--****1
                                 <section>
                                     <h2>New Items</h2>
                                     <a href="item-detail.html" class="item-horizontal small">
@@ -316,7 +241,6 @@
                                         </div>
                                     </a>
                                     <!--/.item-horizontal small-->
-        <!--****2
                                     <a href="item-detail.html" class="item-horizontal small">
                                         <h3>Blue Chilli</h3>
                                         <figure>2476 Whispering Pines Circle</figure>
@@ -332,14 +256,11 @@
                                         </div>
                                     </a>
                                     <!--/.item-horizontal small-->
-         <!--****3        
                                 </section>
                                 <!--end New Items-->
-         <!--****4         
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <!--Recent Reviews-->
-         <!--****5
                                 <section>
                                     <h2>Recent Reviews</h2>
                                     <a href="item-detail.html#reviews" class="review small">
@@ -356,7 +277,6 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non suscipit felis, sed sagittis tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac placerat mauris.
                                         </p>
                                     </a><!--/.review-->
-         <!--****6         
                                     <a href="item-detail.html#reviews" class="review small">
                                         <h3>Saguaro Tavern</h3>
                                         <figure>2476 Whispering Pines Circle</figure>
@@ -372,12 +292,9 @@
                                         </p>
                                     </a>
                                     <!--/.review-->
-           <!--****7       
                                 </section>
                                 <!--end Recent Reviews-->
-           <!--****8         
                             </div>
-           -->         
                             <div class="col-md-4 col-sm-4">
                                 <section>
                                     <h1 style="font-size:200%">About Us</h1>
@@ -419,6 +336,8 @@
                             </div>
                             <!--/.col-md-4-->
                         </div>
+       
+                    
                         <!--/.row-->
                     </div>
                     <!--/.container-->
