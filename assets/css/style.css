@@ -5062,7 +5062,7 @@ form.main-search .form-group {
   display: inline-block;
   float: left;
   margin-bottom: 0;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 form.main-search input[type="text"], form.main-search input[type="date"], form.main-search input[type="email"], form.main-search input[type="search"], form.main-search input[type="password"], form.main-search input[type="number"], form.main-search input[type="tel"], form.main-search textarea.form-control, form.main-search .selectpicker {
   background-color: #fff;
