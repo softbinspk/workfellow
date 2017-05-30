@@ -4,12 +4,12 @@
     height: 200px;
     overflow: hidden;
   
-    shape-outside: url(assets/img/leaf.png);
+    shape-outside: url(assets/img/profile.png);
     shape-margin: 15px;
     shape-image-threshold: 0.5;
   
     background: #009966 url(assets/img/index.png);
-    -webkit-mask-image: url(assets/img/leaf.png);
+    -webkit-mask-image: url(assets/img/profile.png);
 
 }
 */
