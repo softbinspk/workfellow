@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/user.style.css" type="text/css">
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
-    <title>WorkFlow</title>
+    <title>Terms - WorkFlow</title>
 
 </head>
 
@@ -26,9 +26,118 @@
         <!-- Navigation-->
         <div class="header">
             <div class="wrapper">
-                <div class="brand">
-                    <a href="index-directory.html"><img src="assets/img/logo.png" alt="logo"></a>
+                <div class="pull-left">
+                    <a id="showLeft"><i class="fa fa-bars"></i></a>
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                        <div class="menu-cover">
+                            <img src="upload/users/mahboob-cover.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class=" menu-profile-dp">
+                            <img src="upload/users/mahboob-dp.png" alt="">
+                        </div>
+                        <div class="menu-profile-info">
+                            <span class="menu-profile-name">Mahboob Hassan</span>
+                            <span class="menu-profile-occupation">Quality Assurance</span>
+                            <span class="menu-profile-organisation">Systems Limited</span>
+                        </div>
+                        <div class="menu-search inner-addon left-addon">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="menu-search" id="keyword" placeholder="Enter Keyword">
+                        </div>
+                        <div class="menu-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs text-center" role="tablist">
+                                <li role="presentation" class="active col-sm-4"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab"><i class="fa fa-bars"></i></a></li>
+                                <li role="presentation" class="col-sm-4"><a href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab"><i class="fa fa-user"></i></a></li>
+                                <li role="presentation" class="col-sm-4"><a href="#groups" aria-controls="groups" role="tab" data-toggle="tab"><i class="fa fa-users"></i></a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="menu">
+                                    <ul class="list-unstyled">
+                                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                                        <li><a href="jobs.html"><i class="fa fa-globe"></i> Browse</a></li>
+                                        <li><a href="people.html"><i class="fa fa-eye"></i> Discover</a></li>
+                                        <li><a href=""><i class="fa fa-file-text-o"></i> Application</a></li>
+                                        <li><a href="profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                                        <li><a href=""><i class="fa fa-calendar"></i> Calendar</a></li>
+                                        <li><a href=""><i class="fa fa-cog"></i> Settings</a></li>
+                                        <li><a href=""><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="contacts">
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Mahboob Hassan</span>
+                                            <span class="menu-profile-occupation">Quality Assurance</span>
+                                            <span class="menu-profile-organisation">Systems Limited</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Bilal Mubarik</span>
+                                            <span class="menu-profile-occupation">Project Manager</span>
+                                            <span class="menu-profile-organisation">Softbins</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Muaaz Zahid</span>
+                                            <span class="menu-profile-occupation">CEO</span>
+                                            <span class="menu-profile-organisation">Softbins</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="groups">
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Mahboob Hassan</span>
+                                            <span class="menu-profile-occupation">Quality Assurance</span>
+                                            <span class="menu-profile-organisation">Systems Limited</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
+                <div class="brand">
+                    <a href="index.html"><img src="assets/img/logo.png"></a>
+                </div>
+                <div class="search-bar">
+                    <form class="main-search narrow" role="form" method="post" action="?">
+                        <div class="input-row">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group location">
+                                    <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                                </div>
+                            </div>
+                            <!-- /.form-group -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                    </form>
+                    <!-- /.main-search -->
+                </div>
+                <!-- /.search-bar -->
                 <nav class="navigation-items">
                     <div class="wrapper">
                         <ul class="main-navigation navigation-top-header"></ul>
@@ -58,35 +167,10 @@
         <div id="page-canvas">
             <!--Off Canvas Navigation-->
             <nav class="off-canvas-navigation">
-                <header>Navigation</header>
-                <div class="main-navigation navigation-off-canvas"></div>
+                <header>Chat Section</header>
+                <!--<div class="main-navigation navigation-off-canvas"></div>-->
             </nav>
             <!--end Off Canvas Navigation-->
-
-            <!--Sub Header-->
-            <section class="sub-header">
-                <div class="search-bar horizontal collapse" id="redefine-search-form"></div>
-                <!-- /.search-bar -->
-                <div class="breadcrumb-wrapper">
-                    <div class="container">
-                        <div class="redefine-search">
-                            <a href="#redefine-search-form" class="inner" data-toggle="collapse" aria-expanded="false" aria-controls="redefine-search-form">
-                                <span class="icon"></span>
-                                <span>Redefine Search</span>
-                            </a>
-                        </div>
-                        <ol class="breadcrumb">
-                            <li><a href="index-directory.html"><i class="fa fa-home"></i></a></li>
-                            <li><a href="#">Page</a></li>
-                            <li class="active">Detail</li>
-                        </ol>
-                        <!-- /.breadcrumb-->
-                    </div>
-                    <!-- /.container-->
-                </div>
-                <!-- /.breadcrumb-wrapper-->
-            </section>
-            <!--end Sub Header-->
 
             <!--Page Content-->
             <div id="page-content">
@@ -131,13 +215,14 @@
                                 <p>
                                     Morbi gravida justo metus, ac bibendum velit mattis ut. In hac habitasse platea dictumst. Aenean nulla libero, rutrum eget mi elementum, sodales viverra orci. Cras consequat quam eget dapibus tincidunt. Sed sed vehicula neque, blandit venenatis tortor. Ut in velit pharetra, cursus turpis a, lacinia velit.
                                 </p>
+                                <br><br><br>
                             </section>
                         </div>
                         <!--Sidebar-->
                         <div class="col-md-3">
                             <aside id="sidebar">
                                 <section>
-                                    <header><h2>New Places</h2></header>
+                                    <header><h2>New Jobs</h2></header>
                                     <a href="item-detail.html" class="item-horizontal small">
                                         <h3>Cash Cow Restaurante</h3>
                                         <figure>63 Birch Street</figure>
@@ -230,108 +315,43 @@
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-md-10 col-sm-10">
                                 <!--New Items-->
                                 <section>
-                                    <h2>New Items</h2>
-                                    <a href="item-detail.html" class="item-horizontal small">
-                                        <h3>Cash Cow Restaurante</h3>
-                                        <figure>63 Birch Street</figure>
-                                        <div class="wrapper">
-                                            <div class="image"><img src="assets/img/items/1.jpg" alt=""></div>
-                                            <div class="info">
-                                                <div class="type">
-                                                    <i><img src="assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="rating" data-rating="4"></div>
+                                    <h2>Quick links</h2>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <a href="about.html">About</a> - <a href="faqs.html">FAQs</a> - <a href="terms-conditions.html">Terms</a> - <a href="profile.html">Profile</a> - <a href="contact.html">Contact</a>
                                             </div>
                                         </div>
-                                    </a>
-                                    <!--/.item-horizontal small-->
-                                    <a href="item-detail.html" class="item-horizontal small">
-                                        <h3>Blue Chilli</h3>
-                                        <figure>2476 Whispering Pines Circle</figure>
-                                        <div class="wrapper">
-                                            <div class="image"><img src="assets/img/items/2.jpg" alt=""></div>
-                                            <div class="info">
-                                                <div class="type">
-                                                    <i><img src="assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                    <span>Restaurant</span>
-                                                </div>
-                                                <div class="rating" data-rating="3"></div>
+                                        <div class="row">
+                                            <div class="col-md-12 copyright">
+                                                <span class="left">(C) WorkFellow, All rights reserved. Powered by <a href="http://softbins.com">Softbins</a></span>
                                             </div>
                                         </div>
-                                    </a>
-                                    <!--/.item-horizontal small-->
                                 </section>
                                 <!--end New Items-->
                             </div>
-                            <div class="col-md-4 col-sm-4">
-                                <!--Recent Reviews-->
+                            <div class="col-md-2 col-sm-2">
                                 <section>
-                                    <h2>Recent Reviews</h2>
-                                    <a href="item-detail.html#reviews" class="review small">
-                                        <h3>Max Five Lounge</h3>
-                                        <figure>4365 Bruce Street</figure>
-                                        <div class="info">
-                                            <div class="rating" data-rating="4"></div>
-                                            <div class="type">
-                                                <i><img src="assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                <span>Restaurant</span>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non suscipit felis, sed sagittis tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac placerat mauris.
-                                        </p>
-                                    </a><!--/.review-->
-                                    <a href="item-detail.html#reviews" class="review small">
-                                        <h3>Saguaro Tavern</h3>
-                                        <figure>2476 Whispering Pines Circle</figure>
-                                        <div class="info">
-                                            <div class="rating" data-rating="5"></div>
-                                            <div class="type">
-                                                <i><img src="assets/icons/restaurants-bars/restaurants/restaurant.png" alt=""></i>
-                                                <span>Restaurant</span>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            Pellentesque mauris. Proin sit amet scelerisque risus. Donec semper semper erat ut mollis curabitur
-                                        </p>
-                                    </a>
-                                    <!--/.review-->
-                                </section>
-                                <!--end Recent Reviews-->
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <section>
-                                    <h2>About Us</h2>
+                                    <h2>Contact Us</h2>
                                     <address>
-                                        <div>Max Five Lounge</div>
-                                        <div>63 Birch Street</div>
-                                        <div>Granada Hills, CA 91344</div>
                                         <figure>
                                             <div class="info">
                                                 <i class="fa fa-mobile"></i>
                                                 <span>818-832-5258</span>
                                             </div>
                                             <div class="info">
-                                                <i class="fa fa-phone"></i>
-                                                <span>+1 123 456 789</span>
-                                            </div>
-                                            <div class="info">
-                                                <i class="fa fa-globe"></i>
-                                                <a href="#">www.maxfivelounge.com</a>
+                                                <i class="fa fa-envelope"></i>
+                                                <a href="#">info@workfellow.com</a>
                                             </div>
                                         </figure>
                                     </address>
                                     <div class="social">
-                                        <a href="#" class="social-button"><i class="fa fa-twitter"></i></a>
+                                        <a href="#" class="social-button"><i class="fa fa-twitter fa-sm"></i></a>
                                         <a href="#" class="social-button"><i class="fa fa-facebook"></i></a>
                                         <a href="#" class="social-button"><i class="fa fa-pinterest"></i></a>
                                     </div>
-
-                                    <a href="contact.html" class="btn framed icon">Contact Us<i class="fa fa-angle-right"></i></a>
                                 </section>
                             </div>
                             <!--/.col-md-4-->
@@ -341,15 +361,6 @@
                     <!--/.container-->
                 </div>
                 <!--/.footer-top-->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <span class="left">(C) WorkFlow, All rights reserved</span>
-                            <span class="right">
-                                <a href="#page-top" class="to-top roll"><i class="fa fa-angle-up"></i></a>
-                            </span>
-                    </div>
-                </div>
-                <!--/.footer-bottom-->
             </div>
         </footer>
         <!--end Page Footer-->
@@ -362,9 +373,8 @@
 <script type="text/javascript" src="assets/js/before.load.js"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.hotkeys.js"></script>
+<script type="text/javascript" src="assets/js/classie.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 <!--[if lte IE 9]>

@@ -5,59 +5,147 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery.nouislider.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <style>
-        .center { text-align: center; }
-        .logo { padding: 80px 0; }
-        img { max-width: 100%; margin-bottom: 20px; }
-        .map { padding: 70px 20px; background: url("version-selector/map.png"); margin-bottom: 60px; border-radius: 20px; -webkit-border-radius: 20px; }
-        .item { transition: .4s ease; -webkit-transition: .4s ease; position: relative; top: 0; margin-bottom: 20px; }
-        .item:hover { top: -5px; }
-    </style>
-
-    <title>Spotter - Universal Directory Listing HTML Template</title>
+    <title>WorkFellow</title>
 
 </head>
 
-<body>
-<div class="center logo">
-    <img src="version-selector/logo.png" alt="">
-</div>
-<div class="container">
-    <div class="map">
-        <div class="row">
-            <div class="col-md-4">
-                <a href="index-directory.html" class="item"><img src="version-selector/google-maps.png" alt=""></a>
+<body onunload="" class="map-fullscreen page-homepage">
+
+<!-- Outer Wrapper-->
+<div id="outer-wrapper">
+    <!-- Inner Wrapper -->
+    <div id="inner-wrapper">
+        <!-- Page Canvas-->
+        <div id="page-canvas">
+            <!--Off Canvas Navigation-->
+            <nav class="off-canvas-navigation">
+                <header>Chat Section</header>
+                <!--<div class="main-navigation navigation-off-canvas"></div>-->
+            </nav>
+            <!--end Off Canvas Navigation-->
+            <!--Page Content-->
+            <div id="page-content">
+                <!--Hero Image-->
+                <section class="hero-image search-filter-middle">
+                    <div class="inner">
+                        <div class="container">
+                            <div class="logo">
+                                <img src="assets/img/logo.png">
+                                Work <span>Fellow</span>
+                            </div>
+                            <div class="search-bar horizontal">
+                                <form class="main-search inputs-4" role="form" method="post" action="?">
+                                    <div class="input-row">
+                                        <div class="form-group">
+                                            <input type="text" id="keyword" placeholder="Search jobs, courses, events & people">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="inner-addon left-addon">
+                                                <i class="fa fa-map-marker"></i>
+                                                <input type="text" class="menu-search" placeholder="Location">
+                                            </div>
+                                        </div>
+                                        <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                </form>
+                                <!-- /.main-search -->
+                            </div>
+                            <!-- /.search-bar -->
+                            <div class="account-controls">
+                                <button class="btn btn-default btn-lg">Sign in</button>
+                                <button class="btn btn-default btn-lg">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Page Footer-->
+                    <footer id="page-footer">
+                        <div class="inner">
+                            <div class="footer-top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-10 col-sm-10">
+                                            <!--New Items-->
+                                            <section>
+                                                <h2>Quick links</h2>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <a href="about.html">About</a> | <a href="faqs.html">FAQs</a> | <a href="terms-conditions.html">Terms</a> | <a href="profile.html">Profile</a> | <a href="contact.html">Contact</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 copyright">
+                                                            <span class="left">(C) WorkFellow, All rights reserved. Powered by <a href="http://softbins.com">Softbins</a></span>
+                                                        </div>
+                                                    </div>
+                                            </section>
+                                            <!--end New Items-->
+                                        </div>
+                                        <div class="col-md-2 col-sm-2">
+                                            <section>
+                                                <h2>Contact Us</h2>
+                                                <address>
+                                                    <figure>
+                                                        <div class="info">
+                                                            <i class="fa fa-phone"></i>
+                                                            <span>818-832-5258</span>
+                                                        </div>
+                                                        <div class="info">
+                                                            <i class="fa fa-envelope"></i>
+                                                            <a href="#">info@workfellow.com</a>
+                                                        </div>
+                                                    </figure>
+                                                </address>
+                                                <div class="social">
+                                                    <a href="#" class="social-button"><i class="fa fa-twitter fa-sm"></i></a>
+                                                    <a href="#" class="social-button"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#" class="social-button"><i class="fa fa-pinterest"></i></a>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <!--/.col-md-4-->
+                                    </div>
+                                    <!--/.row-->
+                                </div>
+                                <!--/.container-->
+                            </div>
+                            <!--/.footer-top-->
+                        </div>
+                    </footer>
+                    <!--end Page Footer-->
+                </section>
+                <!--end Hero Image-->
+
             </div>
-            <div class="col-md-4">
-                <a href="index-osm.html" class="item"><img src="version-selector/osm.png" alt=""></a>
-            </div>
-            <div class="col-md-4">
-                <a href="index-here.html" class="item"><img src="version-selector/here-maps.png" alt=""></a>
-            </div>
+            <!-- end Page Content-->
+            
         </div>
+        <!-- end Page Canvas-->
+        
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <a href="index-real-estate.html" class="item"><img src="version-selector/real-estate.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-            <a href="index-cars.html" class="item"><img src="version-selector/car.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-            <a href="index-restaurants.html" class="item"><img src="version-selector/restaurant.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-            <a href="index-travel.html" class="item"><img src="version-selector/travel.png" alt=""></a>
-        </div>
-    </div>
+    <!-- end Inner Wrapper -->
 </div>
+<!-- end Outer Wrapper-->
 
 <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/before.load.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nouislider.all.min.js"></script>
 
+<!--[if lte IE 9]>
+<script type="text/javascript" src="assets/js/ie-scripts.js"></script>
+<![endif]-->
 </body>
 </html>

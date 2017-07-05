@@ -105,7 +105,7 @@ function createHomepageGoogleMap(_latitude,_longitude,json){
             // Infobox HTML element ----------------------------------------------------------------------------------------
 
             var category = json.data[i].category;
-            infoboxContent.innerHTML = drawInfobox(category, infoboxContent, json, i);
+            //infoboxContent.innerHTML = drawInfobox(category, infoboxContent, json, i);
 
             // Create new markers ------------------------------------------------------------------------------------------
 
@@ -593,26 +593,34 @@ function simpleMap(_latitude, _longitude, draggableMarker){
 function pushItemsToArray(json, a, category, visibleItemsArray){
     var itemPrice;
     visibleItemsArray.push(
-        '<li>' +
+        '<li>'+
             '<div class="item" id="' + json.data[a].id + '">' +
-                '<a href="#" class="image">' +
-                    '<div class="inner">' +
-                        '<div class="item-specific">' +
-                            drawItemSpecific(category, json, a) +
-                        '</div>' +
-                        '<img src="' + json.data[a].gallery[0] + '" alt="">' +
+            '<div class="row">' +
+                '<div class="col-sm-2">' +
+                        '<img src="' + json.data[a].picture + '" alt="" class="global-image">' +
+                '</div>' +
+                '<div class="col-sm-10 no-padding-left">' +
+                        '<span class="title">' + json.data[a].title + '</span>' +
+                        '<span class="time">' + json.data[a].time_created + ' - ' + json.data[a].date_created + '</span>' +
+                        '<span class="location">' + json.data[a].company + ' - ' + json.data[a].location + '</span>' +
+                        '<span class="required-exp"><b> Required Exp:</b>' + json.data[a].required_exp + '</span>' +
+                        '<span class="required-edu"><b>Required Edu:</b>' + json.data[a].required_edu + '</span>' +
+                        '<span class="employment"><b>Employment:</b>' + json.data[a].employment + '</span>' +
+                        '<br>' +
+                        '<span class="social-activity">Liked: 5 &nbsp;&nbsp;&nbsp; Comments: 5 &nbsp; | &nbsp; <a href="#">Apply</a></span>' +
+                '</div>' +
+            '</div>' +
+                '<div class="col-sm-12">' +
+                    '<div class="row">' +
+                        '<hr>' +
                     '</div>' +
-                '</a>' +
-                '<div class="wrapper">' +
-                    '<a href="#" id="' + json.data[a].id + '"><h3>' + json.data[a].title + '</h3></a>' +
-                    '<figure>' + json.data[a].location + '</figure>' +
-                    drawPrice(json.data[a].price) +
-                    '<div class="info">' +
-                        '<div class="type">' +
-                            '<i><img src="' + json.data[a].type_icon + '" alt=""></i>' +
-                            '<span>' + json.data[a].type + '</span>' +
-                        '</div>' +
-                        '<div class="rating" data-rating="' + json.data[a].rating + '"></div>' +
+                '</div>' +
+                '<div class="col-sm-10 col-sm-offset-2">' +
+                    '<div class="row">' +
+                        '<i class="fa fa-heart fa-lg"></i>' +
+                        '<i class="fa fa-retweet fa-lg"></i>' +
+                        '<i class="fa fa-paper-plane-o fa-lg"></i>' +
+                        '<i class="fa fa-ellipsis-h fa-lg"></i>' +
                     '</div>' +
                 '</div>' +
             '</div>' +

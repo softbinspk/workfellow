@@ -14,8 +14,8 @@ function drawInfobox(category, infoboxContent, json, i){
         else                        { title = '' }
     if(json.data[i].location)       { var location = json.data[i].location }
         else                        { location = '' }
-    if(json.data[i].gallery[0])     { var gallery = json.data[i].gallery[0] }
-        else                        { gallery[0] = '../img/default-item.jpg' }
+    // if(json.data[i].gallery[0])     { var gallery = json.data[i].gallery[0] }
+    //     else                        { gallery[0] = '../img/default-item.jpg' }
 
     var ibContent = '';
     ibContent =
@@ -38,7 +38,7 @@ function drawInfobox(category, infoboxContent, json, i){
                         '<i class="fa fa-angle-right"></i>' +
                     '</div>' +
                 '</a>' +
-                '<img src="' + gallery +  '">' +
+                // '<img src="' + gallery +  '">' +
             '</div>' +
         '</div>' +
     '</div>';

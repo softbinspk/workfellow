@@ -23,10 +23,17 @@ $(document).ready(function($) {
         return false;
     });
 
-    // Scrollbar on "Results" section
+    //Scrollbar on "Results" section
 
     if( $('.items-list').length > 0 ){
         $(".items-list").mCustomScrollbar({
+            mouseWheel:{ scrollAmount: 350 }
+        });
+    }
+
+    //Scrollbar on "Profile" section
+    if( $('.items-list').length > 0 ){
+        $(".page-profile .items-list").mCustomScrollbar({
             mouseWheel:{ scrollAmount: 350 }
         });
     }
@@ -113,42 +120,6 @@ $(document).ready(function($) {
 //    if( $('#location').length ){
 //        autoComplete();
 //    }
-
-// Keyboard Shortcuts --------------------------------------------------------------------------------------------------
-
-    $(document).bind('keypress', 'F', function(){
-        $('.redefine-search .expand-content').trigger('click');
-        if( !$('.search-bar').hasClass('collapsed') ){
-            setTimeout(function() {
-                $('.search-bar input').first().focus();
-            }, 200);
-        }
-        return false;
-    });
-
-    $(document).bind('keypress', 'M', function(){
-        $('.header .toggle-navigation').trigger('click');
-        return false;
-    });
-
-    $(document).bind('keypress', '+', function(){
-        $('.header .submit-item').trigger('click');
-        return false;
-    });
-
-    $(document).keydown(function(e) {
-        switch(e.which) {
-            case 37: // left
-                $('.item-slider').trigger('prev.owl.carousel');
-                break;
-            case 39: // right
-                $('.item-slider').trigger('next.owl.carousel');
-                break;
-            case 27: // ESC
-                $('.modal-background').trigger('click');
-                break;
-        }
-    });
 
 //  Smooth Navigation Scrolling ----------------------------------------------------------------------------------------
 
@@ -571,6 +542,38 @@ function adaptBackgroundHeight(){
         }
     });
 
+/*
+
+NOW AS A SUPER EASY TO USE PLUGIN:
+https://panels.scotch.io
+
+*/
 
 
 }
+
+  // Menu Open and closest -----------------------------------------------------------------------------
+
+var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        showLeft = document.getElementById( 'showLeft' ),
+        pageCanvas = document.getElementById ('page-canvas');
+
+pageCanvas.onclick = function() {
+    $(menuLeft).removeClass("cbp-spmenu-open");
+};
+showLeft.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeft' );
+};
+
+function disableOther( button ) {
+    if( button !== 'showLeft' ) {
+        classie.toggle( showLeft, 'disabled' );
+    }
+}
+
+$('.menu-tabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+})

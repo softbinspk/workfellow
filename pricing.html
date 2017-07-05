@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/user.style.css" type="text/css">
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
 
-    <title>Spotter - Universal Directory Listing HTML Template</title>
+    <title>Profile - WorkFellow</title>
 
 </head>
 
@@ -26,9 +26,114 @@
         <!-- Navigation-->
         <div class="header">
             <div class="wrapper">
-                <div class="brand">
-                    <a href="index-directory.html"><img src="assets/img/logo.png" alt="logo"></a>
+                <div class="pull-left">
+                    <a id="showLeft"><i class="fa fa-bars"></i></a>
+                    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                        <div class="menu-cover">
+                            <img src="upload/users/mahboob-cover.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class=" menu-profile-dp">
+                            <img src="upload/users/mahboob-dp.png" alt="">
+                        </div>
+                        <div class="menu-profile-info">
+                            <span class="menu-profile-name">Mahboob Hassan</span>
+                            <span class="menu-profile-occupation">Quality Assurance</span>
+                            <span class="menu-profile-organisation">Systems Limited</span>
+                        </div>
+                        <div class="menu-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs text-center" role="tablist">
+                                <li role="presentation" class="active col-sm-4"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab"><i class="fa fa-bars"></i></a></li>
+                                <li role="presentation" class="col-sm-4"><a href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab"><i class="fa fa-user"></i></a></li>
+                                <li role="presentation" class="col-sm-4"><a href="#groups" aria-controls="groups" role="tab" data-toggle="tab"><i class="fa fa-users"></i></a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="menu">
+                                    <ul class="list-unstyled">
+                                        <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+                                        <li><a href=""><i class="fa fa-globe"></i> Browse</a></li>
+                                        <li><a href=""><i class="fa fa-eye"></i> Discover</a></li>
+                                        <li><a href=""><i class="fa fa-file-text-o"></i> Application</a></li>
+                                        <li><a href=""><i class="fa fa-user"></i> Profile</a></li>
+                                        <li><a href=""><i class="fa fa-calendar"></i> Calendar</a></li>
+                                        <li><a href=""><i class="fa fa-cog"></i> Settings</a></li>
+                                        <li><a href=""><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="contacts">
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Mahboob Hassan</span>
+                                            <span class="menu-profile-occupation">Quality Assurance</span>
+                                            <span class="menu-profile-organisation">Systems Limited</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Bilal Mubarik</span>
+                                            <span class="menu-profile-occupation">Project Manager</span>
+                                            <span class="menu-profile-organisation">Softbins</span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Muaaz Zahid</span>
+                                            <span class="menu-profile-occupation">CEO</span>
+                                            <span class="menu-profile-organisation">Softbins</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="groups">
+                                    <div class="menu-profile-item">
+                                        <div class=" menu-profile-dp">
+                                            <img src="upload/users/mahboob-dp.png" alt="">
+                                        </div>
+                                        <div class="menu-profile-info">
+                                            <span class="menu-profile-name">Mahboob Hassan</span>
+                                            <span class="menu-profile-occupation">Quality Assurance</span>
+                                            <span class="menu-profile-organisation">Systems Limited</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
+                <div class="brand">
+                    <a href="index-directory-jobs.html"><h2>WorkFellow</h2></a>
+                </div>
+                <div class="search-bar">
+                    <form class="main-search narrow" role="form" method="post" action="?">
+                        <div class="input-row">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="keyword" placeholder="Enter Keyword">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group location">
+                                    <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                                </div>
+                            </div>
+                            <!-- /.form-group -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                            <!-- /.form-group -->
+                        </div>
+                    </form>
+                    <!-- /.main-search -->
+                </div>
+                <!-- /.search-bar -->
                 <nav class="navigation-items">
                     <div class="wrapper">
                         <ul class="main-navigation navigation-top-header"></ul>
